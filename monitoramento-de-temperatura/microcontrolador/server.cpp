@@ -54,7 +54,8 @@ void serverSetupRoutes(ESP8266WebServer* server) {
     html += "Senha: <input name='mqttPass' type='password' required><br>";
     html += "Topico de Dados: <input name='mqttTopicData' required><br>";
     html += "Topico de Alerta: <input name='mqttTopicAlert' required><br>";
-    html += "Device ID: <input name='mqttDeviceId' required><br><br>";
+    html += "Device ID: <input name='mqttDeviceId' required><br>";
+    html += "Porta do Broker: <input type:'number' name='mqttPort' required><br><br>";
 
     // --- Limites de sensores ---
     html += "<h3>Limites de Temperatura e Umidade</h3>";
@@ -83,6 +84,7 @@ void serverSetupRoutes(ESP8266WebServer* server) {
     cfg.mqttTopicData = server->arg("mqttTopicData");
     cfg.mqttTopicAlert = server->arg("mqttTopicAlert");
     cfg.mqttDeviceId = server->arg("mqttDeviceId");
+    cfg.mqttPort = server->arg("mqttPort").toInt();
 
     // --- Limites ambientais ---
     cfg.temperatureMax = server->arg("temperatureMax").toFloat();

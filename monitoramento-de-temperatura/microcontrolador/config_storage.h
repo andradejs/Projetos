@@ -27,6 +27,7 @@ struct ConfigurationData {
   String mqttTopicData;     /**< Tópico MQTT utilizado para publicação dos dados de sensores */
   String mqttTopicAlert;    /**< Tópico MQTT utilizado para envio de alertas */
   String mqttDeviceId;      /**< Identificador único do dispositivo (Device ID) */
+  unsigned int mqttPort;    /**< Porta de serviço do broker MQTT*/
 
   String wifiPass;          /**< Senha da rede Wi-Fi */
   String wifiSSID;          /**< SSID (nome) da rede Wi-Fi */

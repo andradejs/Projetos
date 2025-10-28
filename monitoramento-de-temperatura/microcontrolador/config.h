@@ -20,8 +20,8 @@ const constexpr uint8_t PIN_LED = 12;           //pino para utilizaçao da led
 // -----------------------------------------------------------------------------
 // Constantes de configuração para rede do microcontrolador usada para acesso a configurações internas
 // -----------------------------------------------------------------------------
-constexpr const char* SSID_ACCESS_POINT = "xxxxxxxxxxxxx"; // Nome da Rede Wifi
-constexpr const char* PASSWORD_ACCESS_POINT = "xxxxxxxxxxxx"; // Senha da Rede Wifi
+constexpr const char* SSID_ACCESS_POINT = "Embarcatech"; // Nome da Rede Wifi
+constexpr const char* PASSWORD_ACCESS_POINT = "12345678"; // Senha da Rede Wifi
 
 
 #endif
