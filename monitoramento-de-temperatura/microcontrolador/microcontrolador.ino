@@ -48,7 +48,7 @@ checkErrors(const EnvironmentData& data) {
 
   return status;
 }
-
+ 
 void updateDisplay(const EnvironmentData& data, const ErrorStatus& errors) {
 
   log(LOG_INFO, "Dados Display Temperatura: %.2f°C Humidade %.2f%%", data.temperature, data.humidity);
